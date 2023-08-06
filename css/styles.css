@@ -67,6 +67,10 @@ header {
   text-decoration: none;
 }
 
+footer {
+  background-color: #2e2f42;
+}
+
 .logo-footer {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -79,7 +83,14 @@ header {
 }
 
 .logo-accent-footer {
-  color: #fff;
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 .our-team-section {
@@ -125,10 +136,6 @@ header {
 
 .elements-text {
   letter-spacing: 0.02em;
-}
-
-footer {
-  background-color: #2e2f42;
 }
 
 .our-team-section {

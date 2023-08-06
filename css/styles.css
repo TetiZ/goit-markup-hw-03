@@ -24,27 +24,15 @@ body {
 header {
   background-color: #e7e9fc;
 }
-.title-button {
-  color: #fff;
-  background-color: #4d5ae5;
-  font-weight: medium;
-  font-size: 16px;
-  line-height: 1.5;
-  cursor: pointer;
-  letter-spacing: 0.04em;
-}
 
-.title-button:hover,
-.tittle-button:focus,
-.title-button:active {
-  background-color: #404bbf;
+.address-list {
+  font-style: normal;
 }
 
 .contact-links {
   color: #434455;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: underline;
@@ -109,6 +97,22 @@ header {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.title-button {
+  color: #fff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+
+.title-button:hover,
+.tittle-button:focus,
+.title-button:active {
+  background-color: #404bbf;
 }
 
 .title-section-features {

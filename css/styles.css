@@ -110,20 +110,20 @@ header {
 }
 
 .title-button:hover,
-.tittle-button:focus,
+.title-button:focus,
 .title-button:active {
   background-color: #404bbf;
 }
 
-.title-section-features {
-  color: #2e2f42;
+.title-features {
+  font-size: 20px;
   font-weight: 500;
-  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.text-section-features {
+.text-features {
   letter-spacing: 0.02em;
 }
 

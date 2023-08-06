@@ -123,9 +123,8 @@ header {
   letter-spacing: 0.02em;
 }
 
-h3 {
-  font-weight: medium;
-  font-size: 20px;
+.text-section-features {
+  letter-spacing: 0.02em;
 }
 
 footer {

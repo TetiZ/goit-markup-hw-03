@@ -1,13 +1,16 @@
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-weight: Regular;
+  font-weight: 400;
   color: #434455;
   background-color: #fff;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
+.navigation-list {
+  list-style-type: none;
+}
 .navigation {
   color: #2e2f42;
   font-weight: 500;
@@ -21,21 +24,15 @@ body {
   color: #404bbf;
 }
 
-header {
-  background-color: #e7e9fc;
-}
-
 .address-list {
-  font-style: normal;
+  list-style-type: none;
 }
-
 .contact-links {
   color: #434455;
   font-size: 16px;
-  font-weight: 500;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: underline;
   text-decoration: none;
 }
 
@@ -58,13 +55,6 @@ header {
 
 .logo-accent {
   color: #2e2f42;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .custom-footer {
@@ -88,7 +78,6 @@ header {
 
 .footer-text {
   color: #f4f4fd;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
@@ -103,7 +92,7 @@ header {
 
 .page-title {
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -126,6 +115,10 @@ header {
   background-color: #404bbf;
 }
 
+.features-list {
+  list-style-type: none;
+}
+
 .elements-title {
   font-size: 20px;
   font-weight: 500;
@@ -146,13 +139,19 @@ header {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
+.team-list {
+  list-style-type: none;
+}
 .team-cards {
   background-color: #fff;
+}
+
+.portfolio-list {
+  list-style-type: none;
 }

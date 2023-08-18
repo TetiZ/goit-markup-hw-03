@@ -1,3 +1,11 @@
+:root {
+  --pressed-state: #404bbf;
+  --primary-text-color: #434455;
+  --secondary-text-color: #f4f4fd;
+  --accent-grey-color: #2e2f42;
+  --primary-el-color: #4d5ae5;
+}
+
 /* global */
 h1,
 h2,
@@ -5,88 +13,113 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
-}
-
-.container {
-  width: 1158px;
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #434455;
+  color: var(--primary-text-color);
   background-color: #fff;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* Header */
-
-.navigation-list {
+.list {
   list-style-type: none;
 }
-.navigation {
-  color: #2e2f42;
-  font-weight: 500;
+
+.link {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* Header */
+
+.navbar {
+  display: flex;
+  width: calc((100%-2 * 40) / 3);
+  height: 100%;
+  flex-direction: row;
+  border-bottom: 1px solid #e7e9fc;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.navigation {
+  color: var(--accent-grey-color);
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 .navigation:hover,
 .navigation:active,
 .navigation:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
-.address-links {
-  font-style: normal;
-}
-
-.address-list {
-  list-style-type: none;
-}
 .contact-links {
-  color: #434455;
+  font-style: normal;
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .contact-links:hover,
 .contact-links:active,
 .contact-links:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .logo-header {
-  color: #4d5ae5;
+  color: var(--primary-el-color);
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .logo-accent {
-  color: #2e2f42;
+  color: var(--accent-grey-color);
 }
 
 /* Main */
@@ -94,7 +127,7 @@ body {
 /* Section 1 - title */
 
 .title-section {
-  background-color: #2e2f42;
+  background-color: var(--accent-grey-color);
 }
 
 .page-title {
@@ -108,7 +141,7 @@ body {
 
 .title-button {
   color: #fff;
-  background-color: #4d5ae5;
+  background-color: var(--primary-el-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -119,21 +152,17 @@ body {
 .title-button:hover,
 .title-button:focus,
 .title-button:active {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
 }
 
 /* Section 2 - features */
-
-.features-list {
-  list-style-type: none;
-}
 
 .elements-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--accent-grey-color);
 }
 
 .elements-text {
@@ -143,11 +172,11 @@ body {
 /* Section 3 - team */
 
 .our-team-section {
-  background-color: #f4f4fd;
+  background-color: var(--secondary-text-color);
 }
 
 .section-title {
-  color: #2e2f42;
+  color: var(--accent-grey-color);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -156,43 +185,34 @@ body {
   text-transform: capitalize;
 }
 
-.team-list {
-  list-style-type: none;
-}
-
 .team-cards {
   background-color: #fff;
 }
 
 /* Section 4 - portfolio */
 
-.portfolio-list {
-  list-style-type: none;
-}
-
 /* Footer */
 
 .custom-footer {
-  background-color: #2e2f42;
+  background-color: var(--accent-grey-color);
 }
 
 .logo-footer {
-  color: #4d5ae5;
+  color: var(--primary-el-color);
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .logo-accent-footer {
-  color: #f4f4fd;
+  color: var(--secondary-text-color);
 }
 
 .footer-text {
-  color: #f4f4fd;
+  color: var(--secondary-text-color);
   line-height: 24px;
   letter-spacing: 0.02em;
 }

@@ -72,7 +72,6 @@ body {
   flex-direction: row;
   height: 100%;
   align-items: center;
-  max-width: 1158px;
 }
 
 .menu {
@@ -90,7 +89,7 @@ body {
   color: var(--accent-grey-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .navigation:hover,

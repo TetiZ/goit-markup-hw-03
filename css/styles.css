@@ -216,10 +216,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-grey-color);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .elements-text {
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Section 3 - team */
@@ -269,13 +271,12 @@ img {
   row-gap: 48px;
   column-gap: 24px;
   flex-shrink: 0;
-  width: calc((100-2 * 24) / 3);
   justify-content: center;
 }
 
 .portfolio-list-item {
   flex-direction: column;
-  border: 1px solid var(--cornflower);
+  width: calc((100-2 * 24) / 3);
 }
 
 .portfolio-items-info {
@@ -284,14 +285,22 @@ img {
   padding: 32px 16px;
   flex-direction: column;
   align-items: flex-start;
+  border: 1px solid var(--cornflower);
 }
 /* Footer */
 
+.footer-conteiner {
+}
+
 .custom-footer {
   background-color: var(--accent-grey-color);
+  padding: 100px 0;
+  width: 1440px;
 }
 
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   color: var(--primary-el-color);
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -309,4 +318,5 @@ img {
   color: var(--secondary-text-color);
   line-height: 24px;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }

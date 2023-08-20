@@ -286,6 +286,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 /* Footer */
 

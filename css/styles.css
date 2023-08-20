@@ -4,6 +4,7 @@
   --secondary-text-color: #f4f4fd;
   --accent-grey-color: #2e2f42;
   --primary-el-color: #4d5ae5;
+  --cornflower: #e7e9fc;
 }
 
 /* global */
@@ -72,10 +73,15 @@ body {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Header */
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--cornflower);
   width: 1440px;
 }
 
@@ -100,6 +106,7 @@ body {
 }
 
 .menu-list-item {
+  padding: 24px 0;
 }
 
 .navigation {
@@ -217,6 +224,12 @@ body {
 
 /* Section 3 - team */
 
+.team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
 .our-team-section {
   background-color: var(--secondary-text-color);
 }
@@ -229,14 +242,49 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-cards {
   background-color: #fff;
+  width: calc((100%-3 * 24) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-cards-info {
+  display: flex;
+  gap: 8px;
+  padding: 32px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Section 4 - portfolio */
 
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-shrink: 0;
+  width: calc((100-2 * 24) / 3);
+  justify-content: center;
+}
+
+.portfolio-list-item {
+  flex-direction: column;
+  border: 1px solid var(--cornflower);
+}
+
+.portfolio-items-info {
+  display: flex;
+  gap: 8px;
+  padding: 32px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
 /* Footer */
 
 .custom-footer {

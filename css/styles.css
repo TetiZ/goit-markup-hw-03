@@ -89,7 +89,6 @@ body {
 .nav-menu {
   display: flex;
   flex-direction: row;
-  /* height: 100%; */
   align-items: center;
 }
 
@@ -98,10 +97,10 @@ body {
   flex-direction: row;
   gap: 40px;
   align-items: center;
+  padding: 24px 0;
 }
 
 .menu-list-item {
-  padding: 24px 0;
 }
 
 .navigation {
